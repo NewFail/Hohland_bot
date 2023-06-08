@@ -7,7 +7,7 @@ from app.config_reader import load_config
 
 configs = load_config("config/bot.ini")
 
-token=configs.DC_bot.token
+token=configs.Dc_bot.token
 
 config = {
     'token': token,
@@ -36,6 +36,6 @@ async def chat_gpt(ctx):
         await ctx.send('Время вышло, жду сообщение от тебя до следующего раза.')
 
 
-bot.run('MTExNjM3OTQxMTY2MzU2ODk3Nw.GRMRXy.1j885BcAfqXuqpwgGWSpPGiFNXVAlMVYGsaIwc')
+bot.run(token)
 
 
